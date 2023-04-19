@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+	<title>{% block title%} {% endblock %}</title>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+			<h2
+				style="font-size: 36px;line-height: 42px;text-transform: uppercase;text-shadow: 0 2px blue, 0 3px #777;">
+				Blog app</h2>
+		</a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item {{ 'active' if homeIsActive == True }}">
+					<a class="nav-link" href="/"
+					style="background-color: red;color: white;padding: 15px 15px 15px 15px;text-decoration: none;text-transform: uppercase;margin-right: 20px;">Home
+					</a>
+				</li>
+				<li class="nav-item {{ 'active' if createPostIsActive == True }}">
+					<a class="nav-link" href="/create-post"
+						style="background-color: red;color: white;padding: 15px 15px 15px 15px;text-decoration: none;text-transform: uppercase;">Post</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	{% block content %} {% endblock %}
+	<footer>
+		<hr />
+		<div style="padding:300px 0px 0px 1000px;">
+			<p>~By</p>
+			<li>PES1UG20CS459</li>
+			<li>PES1UG20CS483</li>
+			<li>PES1UG20CS430</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+
+</html>
