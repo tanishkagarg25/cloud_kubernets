@@ -1,5 +1,5 @@
 @ECHO OFF
-ECHO ===========================Anup Omkar - PES2UG19CS051===========================
+ECHO ===========================BLOG===========================
 
 @ECHO OFF
 ECHO Removing images,pods and deployments...
